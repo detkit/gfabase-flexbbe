@@ -15,11 +15,11 @@ body {
 }
 
 .flex_center {
-	@apply flex justify-center items-center;
+	@apply flex items-center justify-center;
 }
 
 .flex_between {
-	@apply flex justify-between items-center;
+	@apply flex items-center justify-between;
 }
 
 .flex_start {
@@ -31,7 +31,7 @@ body {
 }
 
 .paddings {
-	@apply lg:px-20 py-6 px-5;
+	@apply px-5 py-6 lg:px-20;
 }
 
 ::-webkit-scrollbar {
@@ -45,34 +45,34 @@ body {
 }
 
 .modal-head-text {
-	@apply md:text-5xl text-3xl font-extrabold text-left max-w-5xl w-full;
+	@apply w-full max-w-5xl text-3xl font-extrabold text-left md:text-5xl;
 }
 
 .no-result-text {
-	@apply w-full text-center my-10 px-2;
+	@apply w-full px-2 my-10 text-center;
 }
 
 /* Project Details */
-.user-actions_section {
-	@apply fixed max-md:hidden flex gap-4 flex-col right-10 top-20;
+.user__actions-section {
+	@apply fixed flex flex-col gap-4 max-md:hidden right-10 top-20;
 }
 
 .user__info {
-	@apply flex flex-wrap whitespace-nowrap text-sm font-normal gap-2 w-full;
+	@apply flex flex-wrap w-full gap-2 text-sm font-normal whitespace-nowrap;
 }
 
 /* Home */
 .projects-grid {
-	@apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-10 w-full;
+	@apply grid w-full grid-cols-1 gap-10 mt-10 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
 }
 
 /* Project Actions */
 .edit__action-btn {
-	@apply p-3 text-gray-100 bg-light-white-400 rounded-lg text-sm font-medium;
+	@apply p-3 text-sm font-medium text-gray-100 rounded-lg bg-light-white-400;
 }
 
 .delete__action-btn {
-	@apply p-3 text-gray-100 hover:bg-red-600 rounded-lg text-sm font-medium;
+	@apply p-3 text-sm font-medium text-gray-100 rounded-lg hover:bg-red-600;
 }
 
 /* Related Project Card */
@@ -81,16 +81,16 @@ body {
 }
 
 .related__project-card_title {
-	@apply justify-end items-end w-full h-1/3 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl gap-2 absolute bottom-0 right-0 font-semibold text-lg text-white p-4;
+	@apply absolute bottom-0 right-0 items-end justify-end w-full gap-2 p-4 text-lg font-semibold text-white h-1/3 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl;
 }
 
 .related__projects-grid {
-	@apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-5;
+	@apply grid grid-cols-1 gap-8 mt-5 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
 }
 
 /* Custom Menu */
 .custom__menu-btn {
-	@apply gap-4 w-full rounded-md bg-light-white-100 p-4 text-base outline-none capitalize;
+	@apply w-full gap-4 p-4 text-base capitalize rounded-md outline-none bg-light-white-100;
 }
 
 .custom__menu-items {
@@ -98,30 +98,30 @@ body {
 }
 
 .custom__menu-item {
-	@apply text-left w-full px-5 py-2 text-sm hover:bg-light-white-100 self-start whitespace-nowrap capitalize;
+	@apply self-start w-full px-5 py-2 text-sm text-left capitalize hover:bg-light-white-100 whitespace-nowrap;
 }
 
 /* Footer */
 .footer {
-	@apply flex-col paddings w-full gap-20 bg-light-white;
+	@apply flex-col w-full gap-20 paddings bg-light-white;
 }
 
 .footer__copyright {
-	@apply max-sm:flex-col w-full text-sm font-normal;
+	@apply w-full text-sm font-normal max-sm:flex-col;
 }
 
 .footer__column {
-	@apply flex-1 flex flex-col gap-3 text-sm min-w-max;
+	@apply flex flex-col flex-1 gap-3 text-sm min-w-max;
 }
 
 /* Form Field */
 .form__field-input {
-	@apply w-full outline-0 bg-light-white-100 rounded-xl p-4;
+	@apply w-full p-4 outline-0 bg-light-white-100 rounded-xl;
 }
 
 /* Modal */
 .modal {
-	@apply fixed z-10 left-0 right-0 top-0 bottom-0 mx-auto bg-black/80;
+	@apply fixed top-0 bottom-0 left-0 right-0 z-10 mx-auto bg-black/80;
 }
 
 .modal__wrapper {
@@ -130,7 +130,7 @@ body {
 
 /* Navbar */
 .navbar {
-	@apply py-5 px-8 border-b border-nav-border gap-4;
+	@apply gap-4 px-8 py-5 border-b border-nav-border;
 }
 
 /* Profile Menu */
@@ -140,27 +140,27 @@ body {
 
 /* Profile Card */
 .profile__card-title {
-	@apply justify-end items-end w-full h-1/3 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl gap-2 absolute bottom-0 right-0 font-semibold text-lg text-white p-4;
+	@apply absolute bottom-0 right-0 items-end justify-end w-full gap-2 p-4 text-lg font-semibold text-white h-1/3 bg-gradient-to-b from-transparent to-black/50 rounded-b-2xl;
 }
 
 /* Project Form */
 .form {
-	@apply flex-col w-full lg:pt-24 pt-12 gap-10 text-lg max-w-5xl mx-auto;
+	@apply flex-col w-full max-w-5xl gap-10 pt-12 mx-auto text-lg lg:pt-24;
 }
 
-.form-image_container {
+.form-image__container {
 	@apply w-full lg:min-h-[400px] min-h-[200px] relative;
 }
 
-.form-image_label {
-	@apply z-10 text-center w-full h-full p-20 text-gray-100 border-2 border-gray-50 border-dashed;
+.form-image__label {
+	@apply z-10 w-full h-full p-20 text-center text-gray-100 border-2 border-dashed border-gray-50;
 }
 
-.form-image_input {
-	@apply absolute z-30 w-full opacity-0 h-full cursor-pointer;
+.form-image__input {
+	@apply absolute z-30 w-full h-full opacity-0 cursor-pointer;
 }
 
 /* Profile Projects */
 .profile__projects {
-	@apply grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-5;
+	@apply grid grid-cols-1 gap-8 mt-5 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
 }
